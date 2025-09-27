@@ -1,0 +1,44 @@
+#for PVR
+/dev/pvr_sync             0666   system     system
+/dev/pvrsrvkm             0666   system     system
+/dev/dbgdrv               0666   system     system
+/dev/ion                  0666   system     system
+
+#for Camera
+/dev/video0               0660   system     camera
+
+#for DSSCOMP
+/dev/dsscomp              0660   system     system
+/dev/tiler                0666   system     system
+
+#for SYSLINK
+/dev/rpmsg-omx0           0660   drmrpc    drmrpc
+/dev/rpmsg-omx1           0660   drmrpc    drmrpc
+/dev/rproc_user           0660   drmrpc    drmrpc
+/dev/tf_driver            0660   drmrpc    drmrpc
+/dev/tf_ctrl              0660   drmrpc    drmrpc
+
+#for FM v4l2 Radio
+/dev/radio0               0600   fmradio   fmradio
+
+#for GCX
+/dev/gcioctl              0660   system     system
+
+# for DVP
+/dev/dvp_kgm_dsp          0666   system     system
+/dev/dvp_kgm_simcop       0666   system     system
+
+# for Cradle on UART 3
+/dev/ttyO2       0666   root    root
+
+# for USB serial port
+/dev/ttyUSB*         0666   root    root
+
+# bcb permission
+/dev/block/mmcblk0p9     0660   root    system
+
+# for Bluetooth
+/dev/hci_tty              0666   bluetooth bluetooth
+
+# for usb otg host
+/sys/devices/platform/musb-omap2430/musb-hdrc/usb* uevent 0660 root usb

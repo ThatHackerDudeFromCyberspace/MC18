@@ -1,0 +1,6 @@
+on init
+	symlink /dev/block/platform /dev/block/platform/omap
+	symlink /dev/block/platform/omap/omap_hsmmc.1 /dev/block/platform/mmci-omap-hs.1
+	mkdir /factory 0655 system system
+	mount ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/factory /factory wait ro
+	mount ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/userdata /data wait ro
