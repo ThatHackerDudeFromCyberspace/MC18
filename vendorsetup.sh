@@ -5,10 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_MC18.mk
-
-COMMON_LUNCH_CHOICES := \
-    omni_MC18-user \
-    omni_MC18-userdebug \
-    omni_MC18-eng
+add_lunch_combo omni_MC18-user
+add_lunch_combo omni_MC18-userdebug
+add_lunch_combo omni_MC18-eng

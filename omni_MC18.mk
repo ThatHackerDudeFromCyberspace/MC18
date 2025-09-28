@@ -16,7 +16,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/zebra/MC18/device.mk)
 
 PRODUCT_DEVICE := MC18
-PRODUCT_NAME := twrp_MC18
+PRODUCT_NAME := omni_MC18_MC18
 PRODUCT_BRAND := Zebra
 PRODUCT_MODEL := MC18N0
 PRODUCT_MANUFACTURER := zebra
